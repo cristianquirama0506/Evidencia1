@@ -4,7 +4,6 @@ $miconexion = new ConexionMysql();
 $miconexion->CrearConexion();
 
 $Codigo = $_POST['Codigo'];
-$Nombre = $_POST['Nombre'];
 $Titulo = $_POST['Titulo'];
 $ISBN = $_POST['ISBN'];
 $Editorial = $_POST['Editorial'];
