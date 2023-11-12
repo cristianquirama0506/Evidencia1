@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autores</title>
-     <!-- Agregar enlace al archivo CSS de Bootstrap -->
+    <title>Prestamos</title>
+    <!-- Agregar enlace al archivo CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
     <div class="container mt-5">
-        <h1>Autores</h1>
+        <h1 class="mb-4">Prestamos</h1>
   
         <form action="procesar.php" method="POST">
             <table class="table">
                 <tr>
-                    <td>Código:</td>
+                    <td>Usuario Código:</td>
                     <td>
-                        <input type="text" name="Codigo" class="form-control" value="<?php echo isset($_GET['Codigo']) ? htmlspecialchars($_GET['Codigo']) : ''; ?>">
+                        <input type="text" name="UsuarioCodigo" class="form-control" value="<?php echo isset($_GET['UsuarioCodigo']) ? htmlspecialchars($_GET['UsuarioCodigo']) : ''; ?>">
                     </td>
                 </tr>
                 <tr>
-                    <td>Nombre:</td>
+                    <td>Ejemplar Código:</td>
                     <td>
-                        <input type="text" name="Nombre" class="form-control" value="<?php echo isset($_GET['nombre']) ? htmlspecialchars($_GET['nombre']) : ''; ?>">
+                        <input type="text" name="EjemplarCodigo" class="form-control" value="<?php echo isset($_GET['EjemplarCodigo']) ? htmlspecialchars($_GET['EjemplarCodigo']) : ''; ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha Prestamo:</td>
+                    <td>
+                        <input type="text" name="FechaPrestamo" class="form-control" value="<?php echo isset($_GET['FechaPrestamo']) ? htmlspecialchars($_GET['FechaPrestamo']) : ''; ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha Devolucion:</td>
+                    <td>
+                        <input type="text" name="FechaDevolucion" class="form-control" value="<?php echo isset($_GET['FechaDevolucion']) ? htmlspecialchars($_GET['FechaDevolucion']) : ''; ?>">
                     </td>
                 </tr>
             </table>
@@ -36,8 +48,6 @@
             <input type="submit" name="btnEliminar" class="btn btn-danger" value="Eliminar">
         </form>
     </div>
-
-    
 
     <!-- Agregar enlace al archivo JS de Bootstrap y al archivo jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

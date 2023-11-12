@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autores</title>
-     <!-- Agregar enlace al archivo CSS de Bootstrap -->
+    <title>Usuarios</title>
+    <!-- Agregar enlace al archivo CSS de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
     <div class="container mt-5">
-        <h1>Autores</h1>
+        <h1 class="mb-4">Usuarios</h1>
   
         <form action="procesar.php" method="POST">
             <table class="table">
@@ -23,7 +23,19 @@
                 <tr>
                     <td>Nombre:</td>
                     <td>
-                        <input type="text" name="Nombre" class="form-control" value="<?php echo isset($_GET['nombre']) ? htmlspecialchars($_GET['nombre']) : ''; ?>">
+                        <input type="text" name="Nombre" class="form-control" value="<?php echo isset($_GET['Nombre']) ? htmlspecialchars($_GET['Nombre']) : ''; ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td>
+                        <input type="text" name="Telefono" class="form-control" value="<?php echo isset($_GET['Telefono']) ? htmlspecialchars($_GET['Telefono']) : ''; ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dirección:</td>
+                    <td>
+                        <input type="text" name="Direccion" class="form-control" value="<?php echo isset($_GET['Direccion']) ? htmlspecialchars($_GET['Direccion']) : ''; ?>">
                     </td>
                 </tr>
             </table>
@@ -36,8 +48,6 @@
             <input type="submit" name="btnEliminar" class="btn btn-danger" value="Eliminar">
         </form>
     </div>
-
-    
 
     <!-- Agregar enlace al archivo JS de Bootstrap y al archivo jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

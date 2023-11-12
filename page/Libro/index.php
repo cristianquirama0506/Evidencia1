@@ -49,7 +49,7 @@
             <br>
             <br>
             <!-- Agregar clases de Bootstrap a los botones -->
-            <input type="submit" name="btnRegistrar" class="btn btn-primary" value="Registrar">
+            <input type="submit" name="btnRegistrar" class="btn btn-success" value="Registrar">
             <input type="submit" name="btnConsultar" class="btn btn-info" value="Consultar">
             <input type="submit" name="btnActualizar" class="btn btn-warning" value="Actualizar">
             <input type="submit" name="btnEliminar" class="btn btn-danger" value="Eliminar">
