@@ -10,6 +10,33 @@
 </head>
 <body>
 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Aplicación CRUD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Libro/index.php">Libros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Autor/index.php">Autores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Usuario/index.php">Usuarios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Ejemplar/index.php">Ejemplares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Prestamo/index.php">Préstamos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
     <div class="container mt-5">
         <h1 class="mb-4">Libros</h1>
   
